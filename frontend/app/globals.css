@@ -1,0 +1,322 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f1f5f9;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.page {
+  min-height: 100vh;
+}
+
+.banner {
+  width: 100%;
+  background: rgb(246, 246, 246);
+  border-bottom: 4px solid #2db7c9;
+}
+
+.bannerImage {
+  width: 100%;
+  height: 240px;
+  object-fit: contain;
+  display: block;
+}
+
+.topActions {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px 40px;
+}
+
+.loginBtn {
+  background: linear-gradient(135deg,
+      #0f3557,
+      #2db7c9);
+
+  color: white;
+  border: none;
+
+  padding: 12px 30px;
+
+  border-radius: 10px;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.loginBtn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(15, 53, 87, 0.25);
+}
+
+.content {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px 30px 60px;
+}
+
+.content h1 {
+  color: #0f3557;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  text-align: center;
+  color: #2db7c9;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.description {
+  text-align: center;
+  max-width: 800px;
+  margin: 25px auto;
+  color: #555;
+  line-height: 1.7;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+
+  margin-top: 40px;
+}
+
+.card {
+  background: white;
+
+  padding: 25px;
+
+  border-radius: 16px;
+
+  border-top: 5px solid #2db7c9;
+
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+
+  transition: 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.card h3 {
+  color: #0f3557;
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: #666;
+  line-height: 1.5;
+}
+
+
+/* Main Content Area */
+.container {
+  padding: 40px;
+  background: #f1f5f9;
+  min-height: 100vh;
+}
+
+/* Page Heading */
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 30px;
+}
+
+/* Card Style */
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
+  margin-bottom: 30px;
+}
+
+/* Section Heading */
+.sectionTitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 20px;
+}
+
+/* Form Layout */
+.form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+/* Input Fields */
+.input {
+  padding: 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+  transition: 0.2s;
+}
+
+.input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 5px rgba(37, 99, 235, 0.3);
+}
+
+/* Select */
+.select {
+  padding: 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 15px;
+  background: white;
+}
+
+/* Primary Button */
+.button {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.button:hover {
+  background: #1d4ed8;
+}
+
+/* Refresh Button */
+.refreshBtn {
+  background: #0f172a;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.refreshBtn:hover {
+  background: #334155;
+}
+
+/* Table */
+.tableWrapper {
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+}
+
+.table th {
+  background: #1e293b;
+  color: white;
+  padding: 14px;
+  text-align: left;
+}
+
+.table td {
+  padding: 14px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.table tr:hover {
+  background: #f8fafc;
+}
+
+/* Action Buttons */
+.actions {
+  display: flex;
+  gap: 8px;
+}
+
+.viewBtn {
+  background: #0ea5e9;
+  color: white;
+  border: none;
+  padding: 7px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.editBtn {
+  background: #f59e0b;
+  color: white;
+  border: none;
+  padding: 7px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.deleteBtn {
+  background: #ef4444;
+  color: white;
+  border: none;
+  padding: 7px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Patient Information Card */
+.patientCard {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.infoBox {
+  background: #f8fafc;
+  border-left: 4px solid #2563eb;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.infoLabel {
+  font-size: 13px;
+  color: #64748b;
+  margin-bottom: 4px;
+}
+
+.infoValue {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1e293b;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+
+  .title {
+    font-size: 1.7rem;
+  }
+
+  .form {
+    grid-template-columns: 1fr;
+  }
+
+  .actions {
+    flex-direction: column;
+  }
+}
+

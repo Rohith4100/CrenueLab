@@ -1,0 +1,69 @@
+# =========================
+# Environment variables
+# =========================
+.env*
+!.env.example
+
+# =========================
+# Frontend - Next.js
+# =========================
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+frontend/coverage/
+
+# Yarn
+frontend/.pnp
+frontend/.pnp.*
+frontend/.yarn/*
+!frontend/.yarn/patches
+!frontend/.yarn/plugins
+!frontend/.yarn/releases
+!frontend/.yarn/versions
+
+# Build
+frontend/build/
+
+# Vercel
+frontend/.vercel/
+
+# TypeScript
+frontend/*.tsbuildinfo
+frontend/next-env.d.ts
+
+# Frontend logs
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+frontend/.pnpm-debug.log*
+
+# =========================
+# Backend - Python
+# =========================
+backend/__pycache__/
+backend/**/*.py[cod]
+
+# Virtual environment
+.venv/
+backend/.venv/
+
+# Testing / tooling
+.pytest_cache/
+.mypy_cache/
+
+# =========================
+# IDE
+# =========================
+.vscode/
+.idea/
+
+# =========================
+# OS
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Logs
+# =========================
+*.log
